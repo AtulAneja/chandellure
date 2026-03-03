@@ -111,8 +111,16 @@ ul { list-style: none; }
   font-size: 1.7rem;
   color: var(--color-primary);
   letter-spacing: .02em;
+  display: flex;
+  align-items: center;
 }
 .navbar-brand span { color: var(--color-accent); }
+
+.navbar-logo {
+  height: 54px;
+  width: auto;
+  display: block;
+}
 
 .navbar-links {
   display: flex;
@@ -276,6 +284,14 @@ section { padding: 5rem 1.5rem; }
 
 .img-placeholder-wide {
   aspect-ratio: 4/3;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius);
 }
 
 /* ---------- Product Cards ---------- */
