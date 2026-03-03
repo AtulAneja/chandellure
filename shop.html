@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – Chandellure Resin Art</title>
+  <meta name="description" content="Browse the full Chandellure collection of handcrafted resin art – coasters, trays, wall art, jewellery and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">Chande<span>llure</span></a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <a href="cart.html" aria-label="Shopping cart">
+        <button class="cart-icon-btn" aria-label="Cart">
+          🛒
+          <span class="cart-count" style="display:none">0</span>
+        </button>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="cart.html">Cart</a>
+  </div>
+</nav>
+
+<!-- ═══════════════ PAGE HEADER ═══════════════ -->
+<div class="page-header">
+  <h1>The Full Collection</h1>
+  <p>Every piece is handmade to order — browse, filter, and find your perfect piece.</p>
+</div>
+
+<!-- ═══════════════ SHOP ═══════════════ -->
+<section>
+  <div class="container">
+
+    <div class="shop-controls">
+      <div class="filter-pills">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="coasters">Coasters</button>
+        <button class="filter-pill" data-filter="trays">Trays</button>
+        <button class="filter-pill" data-filter="wall-art">Wall Art</button>
+        <button class="filter-pill" data-filter="jewellery">Jewellery</button>
+        <button class="filter-pill" data-filter="bookmarks">Bookmarks</button>
+      </div>
+      <select id="sort-select" class="sort-select" aria-label="Sort products">
+        <option value="featured">Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- ── Coasters ── -->
+      <article class="product-card" data-category="coasters" data-price="38" data-order="1">
+        <div class="product-img-wrap">
+          <span class="product-badge new">New</span>
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Ocean Tide Coaster Set</h3>
+          <p class="product-desc">Set of 4 round coasters in deep ocean blues & sea-foam whites. Non-slip cork backing.</p>
+          <div class="product-footer">
+            <span class="product-price">$38.00</span>
+            <button class="add-to-cart-btn" data-id="coaster-ocean" data-name="Ocean Tide Coaster Set" data-price="38.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="coasters" data-price="42" data-order="2">
+        <div class="product-img-wrap">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Sunset Marble Coasters</h3>
+          <p class="product-desc">4-piece hexagonal coaster set in warm amber, terracotta & ivory marbling.</p>
+          <div class="product-footer">
+            <span class="product-price">$42.00</span>
+            <button class="add-to-cart-btn" data-id="coaster-sunset" data-name="Sunset Marble Coasters" data-price="42.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="coasters" data-price="35" data-order="3">
+        <div class="product-img-wrap">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Botanical Pressed Coaster</h3>
+          <p class="product-desc">Single round coaster with real pressed lavender and fern in clear resin.</p>
+          <div class="product-footer">
+            <span class="product-price">$35.00</span>
+            <button class="add-to-cart-btn" data-id="coaster-botanical" data-name="Botanical Pressed Coaster" data-price="35.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── Trays ── -->
+      <article class="product-card" data-category="trays" data-price="65" data-order="4">
+        <div class="product-img-wrap">
+          <span class="product-badge">Best Seller</span>
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Rose Gold Vanity Tray</h3>
+          <p class="product-desc">Oval organiser tray with gold metallic swirls and pressed rose petals.</p>
+          <div class="product-footer">
+            <span class="product-price">$65.00</span>
+            <button class="add-to-cart-btn" data-id="tray-rosegold" data-name="Rose Gold Vanity Tray" data-price="65.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="trays" data-price="72" data-order="5">
+        <div class="product-img-wrap">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Geode-Style Serving Tray</h3>
+          <p class="product-desc">Large rectangular tray with amethyst-inspired geode design in purple & silver. Food-safe sealant.</p>
+          <div class="product-footer">
+            <span class="product-price">$72.00</span>
+            <button class="add-to-cart-btn" data-id="tray-geode" data-name="Geode-Style Serving Tray" data-price="72.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── Wall Art ── -->
+      <article class="product-card" data-category="wall-art" data-price="120" data-order="6">
+        <div class="product-img-wrap">
+          <span class="product-badge">Best Seller</span>
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Galaxy Wall Panel</h3>
+          <p class="product-desc">12 × 16 in. deep-pour panel in midnight purples, black & gold glitter. Ready to hang.</p>
+          <div class="product-footer">
+            <span class="product-price">$120.00</span>
+            <button class="add-to-cart-btn" data-id="wall-galaxy" data-name="Galaxy Wall Panel" data-price="120.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="wall-art" data-price="95" data-order="7">
+        <div class="product-img-wrap">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Abstract Fluid Art Canvas</h3>
+          <p class="product-desc">8 × 10 in. canvas with a fluid pour design in emerald, teal & copper. Each piece unique.</p>
+          <div class="product-footer">
+            <span class="product-price">$95.00</span>
+            <button class="add-to-cart-btn" data-id="wall-fluid" data-name="Abstract Fluid Art Canvas" data-price="95.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── Jewellery ── -->
+      <article class="product-card" data-category="jewellery" data-price="28" data-order="8">
+        <div class="product-img-wrap">
+          <span class="product-badge new">New</span>
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Botanical Earrings Pair</h3>
+          <p class="product-desc">Lightweight teardrop earrings with real dried wildflowers cast in clear resin. Hypoallergenic hooks.</p>
+          <div class="product-footer">
+            <span class="product-price">$28.00</span>
+            <button class="add-to-cart-btn" data-id="earrings-botanical" data-name="Botanical Earrings Pair" data-price="28.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="jewellery" data-price="18" data-order="9">
+        <div class="product-img-wrap">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Galaxy Pendant Necklace</h3>
+          <p class="product-desc">Round resin pendant in deep blue & holographic glitter on an 18 in. silver-tone chain.</p>
+          <div class="product-footer">
+            <span class="product-price">$18.00</span>
+            <button class="add-to-cart-btn" data-id="necklace-galaxy" data-name="Galaxy Pendant Necklace" data-price="18.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="jewellery" data-price="14" data-order="10">
+        <div class="product-img-wrap">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Floral Ring (adjustable)</h3>
+          <p class="product-desc">Adjustable band with a dome resin top featuring a single tiny pressed rose. Nickel-free.</p>
+          <div class="product-footer">
+            <span class="product-price">$14.00</span>
+            <button class="add-to-cart-btn" data-id="ring-floral" data-name="Floral Ring" data-price="14.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── Bookmarks ── -->
+      <article class="product-card" data-category="bookmarks" data-price="10" data-order="11">
+        <div class="product-img-wrap">
+          <span class="product-badge new">New</span>
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Pressed Flower Bookmark</h3>
+          <p class="product-desc">Slim rectangular resin bookmark with real dried florals. Comes with a gold tassel.</p>
+          <div class="product-footer">
+            <span class="product-price">$10.00</span>
+            <button class="add-to-cart-btn" data-id="bookmark-floral" data-name="Pressed Flower Bookmark" data-price="10.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bookmarks" data-price="12" data-order="12">
+        <div class="product-img-wrap">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Product photo<br>coming soon</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Ocean Wave Bookmark</h3>
+          <p class="product-desc">Wave-shaped bookmark in swirling turquoise & white resin. A perfect gift for book lovers.</p>
+          <div class="product-footer">
+            <span class="product-price">$12.00</span>
+            <button class="add-to-cart-btn" data-id="bookmark-ocean" data-name="Ocean Wave Bookmark" data-price="12.00">+ Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /products-grid -->
+
+    <!-- Custom order CTA -->
+    <div style="background:linear-gradient(135deg,#f5ece4,#e8daf2);border-radius:16px;padding:3rem;text-align:center;margin-top:4rem">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.9rem;margin-bottom:.75rem">Can't find what you're looking for?</h2>
+      <p style="color:#7a7a7a;margin-bottom:1.5rem;max-width:500px;margin-left:auto;margin-right:auto">I take custom orders! Tell me your colours, size, and vision and I'll craft something completely unique for you.</p>
+      <a href="index.html#contact" class="btn btn-primary">Request a Custom Piece ✦</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Chande<span>llure</span></div>
+      <p class="footer-desc">Handcrafted resin art made with love and a lot of glitter. Each piece is unique — just like you.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">🌐</a>
+        <a href="#" aria-label="Pinterest">📌</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="shop.html">All Products</a></li>
+        <li><a href="shop.html?cat=coasters">Coasters</a></li>
+        <li><a href="shop.html?cat=trays">Trays</a></li>
+        <li><a href="shop.html?cat=wall-art">Wall Art</a></li>
+        <li><a href="shop.html?cat=jewellery">Jewellery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">Care Instructions</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-newsletter">
+      <h4>Newsletter</h4>
+      <p>New drops & exclusive discounts straight to your inbox.</p>
+      <form class="footer-newsletter-form newsletter-form" novalidate>
+        <input type="email" placeholder="your@email.com" aria-label="Email" required />
+        <button type="submit">→</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="yr"></span> Chandellure. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
