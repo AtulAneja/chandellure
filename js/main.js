@@ -238,6 +238,75 @@ function initCheckoutBtn() {
   });
 }
 
+/* ─── hero image slider ─── */
+function initHeroSlider() {
+  const slider = document.getElementById('hero-slider');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.hero-slide');
+  const dots   = slider.querySelectorAll('.hero-dot');
+  const prev   = slider.querySelector('.hero-prev');
+  const next   = slider.querySelector('.hero-next');
+  if (slides.length <= 1) return;
+
+  let current = 0;
+  let timer;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    if (dots[current]) dots[current].classList.remove('active');
+    current = ((index % slides.length) + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    if (dots[current]) dots[current].classList.add('active');
+  }
+
+  function startAuto() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 5000);
+  }
+
+  if (prev) prev.addEventListener('click', () => { goTo(current - 1); startAuto(); });
+  if (next) next.addEventListener('click', () => { goTo(current + 1); startAuto(); });
+
+  dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startAuto(); }));
+
+  /* touch / swipe support */
+  let touchStartX = 0;
+  slider.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  slider.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) { goTo(diff > 0 ? current + 1 : current - 1); startAuto(); }
+  }, { passive: true });
+
+  startAuto();
+}
+
+/* ─── product media carousel ─── */
+function initProductCarousels() {
+  document.querySelectorAll('.product-media-carousel').forEach(carousel => {
+    const items = carousel.querySelectorAll('.product-media');
+    const dots  = carousel.querySelectorAll('.dot');
+    if (items.length <= 1) return;
+    let current = 0;
+
+    function showItem(index) {
+      const prev = current;
+      current = ((index % items.length) + items.length) % items.length;
+      items[prev].classList.remove('active');
+      if (dots[prev]) dots[prev].classList.remove('active');
+      if (items[prev].tagName === 'VIDEO') items[prev].pause();
+      items[current].classList.add('active');
+      if (dots[current]) dots[current].classList.add('active');
+      if (items[current].tagName === 'VIDEO') {
+        items[current].currentTime = 0;
+        items[current].play().catch(() => {});
+      }
+    }
+
+    setInterval(() => showItem(current + 1), 3000);
+  });
+}
+
 /* ─── init ─── */
 document.addEventListener('DOMContentLoaded', () => {
   updateCartBadge();
@@ -248,6 +317,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initForms();
   initActiveNav();
   initCheckoutBtn();
+  initHeroSlider();
+  initProductCarousels();
 
   /* wire up "Add to cart" buttons that have data-* attributes */
   document.querySelectorAll('.add-to-cart-btn[data-id]').forEach(btn => {

@@ -7,7 +7,7 @@
   <meta name="description" content="Browse the full Chandellure collection of handcrafted resin art – coasters, trays, wall art, jewellery and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -58,6 +58,7 @@
     <div class="shop-controls">
       <div class="filter-pills">
         <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="devotional">Devotional</button>
         <button class="filter-pill" data-filter="coasters">Coasters</button>
         <button class="filter-pill" data-filter="trays">Trays</button>
         <button class="filter-pill" data-filter="wall-art">Wall Art</button>
@@ -74,17 +75,26 @@
     <div class="products-grid">
 
       <!-- ── Coasters ── -->
-      <article class="product-card" data-category="coasters" data-price="38" data-order="1">
+      <article class="product-card" data-category="devotional" data-price="65" data-order="1">
         <div class="product-img-wrap">
           <span class="product-badge new">New</span>
-          <img src="images/5E6A4AEE-7713-4270-9788-A745789F2101.jpg" alt="Ocean Tide Coaster Set" class="product-img">
+          <div class="product-media-carousel">
+            <img src="images/Krishna%20Thali/Krishna%20Thali.jpg" alt="Krishna Thali" class="product-media active">
+            <img src="images/Krishna%20Thali/Krishna%20Thali%20%2B%20Ring%20Candle%20Holders.jpg" alt="Krishna Thali with Ring Candle Holders" class="product-media">
+            <video src="images/Krishna%20Thali/Krishna%20Thali%20Video.MOV" class="product-media" muted playsinline aria-label="Krishna Thali product video"></video>
+            <div class="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
         </div>
         <div class="product-info">
-          <h3 class="product-name">Ocean Tide Coaster Set</h3>
-          <p class="product-desc">Set of 4 round coasters in deep ocean blues & sea-foam whites. Non-slip cork backing.</p>
+          <h3 class="product-name">Krishna Thali</h3>
+          <p class="product-desc">A beautifully handcrafted Krishna-themed thali, perfect for devotional settings. Includes matching ring candle holders.</p>
           <div class="product-footer">
-            <span class="product-price">$38.00</span>
-            <button class="add-to-cart-btn" data-id="coaster-ocean" data-name="Ocean Tide Coaster Set" data-price="38.00">+ Add to Cart</button>
+            <span class="product-price">$65.00</span>
+            <button class="add-to-cart-btn" data-id="krishna-thali" data-name="Krishna Thali" data-price="65.00">+ Add to Cart</button>
           </div>
         </div>
       </article>
@@ -127,7 +137,7 @@
       <article class="product-card" data-category="wall-art" data-price="85" data-order="4">
         <div class="product-img-wrap">
           <span class="product-badge">Best Seller</span>
-          <img src="images/Empire%20Clock.webp" alt="Empire Clock" class="product-img">
+          <img src="images/Empire%20Clock%20/Empire%20Clock.webp" alt="Empire Clock" class="product-img">
         </div>
         <div class="product-info">
           <h3 class="product-name">Empire Clock</h3>
@@ -160,7 +170,7 @@
       <article class="product-card" data-category="wall-art" data-price="120" data-order="6">
         <div class="product-img-wrap">
           <span class="product-badge">Best Seller</span>
-          <img src="images/Adiyogi%20Kailash%20Divine%20Frame.jpg" alt="Adiyogi Kailash Divine Frame" class="product-img">
+          <img src="images/Adiyogi%20Kailash%20Divine%20Frame/Adiyogi%20Kailash%20Divine%20Frame.jpg" alt="Adiyogi Kailash Divine Frame" class="product-img">
         </div>
         <div class="product-info">
           <h3 class="product-name">Adiyogi Kailash Divine Frame</h3>
@@ -281,9 +291,9 @@
     </div><!-- /products-grid -->
 
     <!-- Custom order CTA -->
-    <div style="background:linear-gradient(135deg,#1a1410,#121e1c);border-radius:16px;padding:3rem;text-align:center;margin-top:4rem;border:1px solid var(--color-border)">
-      <h2 style="font-family:'Cormorant Garamond','Playfair Display',serif;font-size:1.9rem;margin-bottom:.75rem;color:var(--color-primary)">Can't find what you're looking for?</h2>
-      <p style="color:#9c9184;margin-bottom:1.5rem;max-width:500px;margin-left:auto;margin-right:auto">I take custom orders! Tell me your colours, size, and vision and I'll craft something completely unique for you.</p>
+    <div style="background:linear-gradient(135deg,var(--color-surface),var(--color-surface-2));border-radius:16px;padding:3rem;text-align:center;margin-top:4rem;border:1px solid var(--color-border)">
+      <h2 style="font-family:var(--font-heading);font-size:1.9rem;margin-bottom:.75rem;color:var(--color-primary)">Can't find what you're looking for?</h2>
+      <p style="color:var(--color-text-light);margin-bottom:1.5rem;max-width:500px;margin-left:auto;margin-right:auto">I take custom orders! Tell me your colours, size, and vision and I'll craft something completely unique for you.</p>
       <a href="index.html#contact" class="btn btn-primary">Request a Custom Piece ✦</a>
     </div>
 
