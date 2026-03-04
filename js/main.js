@@ -238,6 +238,32 @@ function initCheckoutBtn() {
   });
 }
 
+/* ─── product media carousel ─── */
+function initProductCarousels() {
+  document.querySelectorAll('.product-media-carousel').forEach(carousel => {
+    const items = carousel.querySelectorAll('.product-media');
+    const dots  = carousel.querySelectorAll('.dot');
+    if (items.length <= 1) return;
+    let current = 0;
+
+    function showItem(index) {
+      const prev = current;
+      current = ((index % items.length) + items.length) % items.length;
+      items[prev].classList.remove('active');
+      if (dots[prev]) dots[prev].classList.remove('active');
+      if (items[prev].tagName === 'VIDEO') items[prev].pause();
+      items[current].classList.add('active');
+      if (dots[current]) dots[current].classList.add('active');
+      if (items[current].tagName === 'VIDEO') {
+        items[current].currentTime = 0;
+        items[current].play().catch(() => {});
+      }
+    }
+
+    setInterval(() => showItem(current + 1), 3000);
+  });
+}
+
 /* ─── init ─── */
 document.addEventListener('DOMContentLoaded', () => {
   updateCartBadge();
@@ -248,6 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initForms();
   initActiveNav();
   initCheckoutBtn();
+  initProductCarousels();
 
   /* wire up "Add to cart" buttons that have data-* attributes */
   document.querySelectorAll('.add-to-cart-btn[data-id]').forEach(btn => {
