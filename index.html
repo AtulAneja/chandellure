@@ -7,7 +7,7 @@
   <meta name="description" content="Unique handcrafted resin art pieces – coasters, trays, jewellery holders, wall art and more. Shop Chandellure." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -45,18 +45,81 @@
   </div>
 </nav>
 
-<!-- ═══════════════ HERO ═══════════════ -->
-<section class="hero">
-  <div class="hero-inner">
-    <span class="hero-badge">✦ Handcrafted with love</span>
-    <h1>One-of-a-kind<br>Resin Art<br>for Your Space</h1>
-    <p>Each piece is lovingly crafted by hand using premium epoxy resin, dried botanicals, and vibrant pigments — no two pieces are ever alike.</p>
-    <div class="hero-cta">
-      <a href="shop.html" class="btn btn-primary">Shop the Collection</a>
-      <a href="#about" class="btn btn-outline">Our Story</a>
+<!-- ═══════════════ HERO SLIDER ═══════════════ -->
+<section class="hero-slider" id="hero-slider" aria-label="Hero image carousel">
+  <div class="hero-slide active" style="background-image:url('images/Krishna%20Thali/Krishna%20Thali.jpg')">
+    <div class="hero-slide-overlay">
+      <span class="hero-badge">✦ Handcrafted with love</span>
+      <h1>One-of-a-kind<br>Resin Art<br>for Your Space</h1>
+      <p>Each piece is lovingly crafted by hand using premium epoxy resin, dried botanicals, and vibrant pigments — no two pieces are ever alike.</p>
+      <div class="hero-cta">
+        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+        <a href="#about" class="btn btn-outline" style="border-color:rgba(255,255,255,.7);color:#fff">Our Story</a>
+      </div>
     </div>
   </div>
+  <div class="hero-slide" style="background-image:url('images/Empire%20Clock%20/Empire%20Clock.webp')">
+    <div class="hero-slide-overlay">
+      <span class="hero-badge">✦ Wall Art Collection</span>
+      <h1>Statement Pieces<br>for Every Wall</h1>
+      <p>Handcrafted resin wall clocks and frames that bring bold, artistic energy to any room.</p>
+      <div class="hero-cta">
+        <a href="shop.html?cat=wall-art" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-slide" style="background-image:url('images/Adiyogi%20Kailash%20Divine%20Frame/Adiyogi%20Kailash%20Divine%20Frame.jpg')">
+    <div class="hero-slide-overlay">
+      <span class="hero-badge">✦ Divine Art Series</span>
+      <h1>Sacred Art<br>for the Spirit</h1>
+      <p>Devotional pieces crafted with reverence and artistic care — a centrepiece for any sacred space.</p>
+      <div class="hero-cta">
+        <a href="shop.html?cat=devotional" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
+  </div>
+  <button class="hero-arrow hero-prev" aria-label="Previous slide">&#8249;</button>
+  <button class="hero-arrow hero-next" aria-label="Next slide">&#8250;</button>
+  <div class="hero-dots" role="tablist" aria-label="Slide indicators">
+    <button class="hero-dot active" aria-label="Go to slide 1" role="tab"></button>
+    <button class="hero-dot" aria-label="Go to slide 2" role="tab"></button>
+    <button class="hero-dot" aria-label="Go to slide 3" role="tab"></button>
+  </div>
 </section>
+
+<!-- ═══════════════ CATEGORY ROW ═══════════════ -->
+<div class="category-row">
+  <div class="category-scroll">
+    <a href="shop.html" class="category-item">
+      <div class="category-circle">🎨</div>
+      <span>All</span>
+    </a>
+    <a href="shop.html?cat=coasters" class="category-item">
+      <div class="category-circle">☕</div>
+      <span>Coasters</span>
+    </a>
+    <a href="shop.html?cat=trays" class="category-item">
+      <div class="category-circle">🍽️</div>
+      <span>Trays</span>
+    </a>
+    <a href="shop.html?cat=wall-art" class="category-item">
+      <div class="category-circle">🖼️</div>
+      <span>Wall Art</span>
+    </a>
+    <a href="shop.html?cat=jewellery" class="category-item">
+      <div class="category-circle">💎</div>
+      <span>Jewellery</span>
+    </a>
+    <a href="shop.html?cat=devotional" class="category-item">
+      <div class="category-circle">🙏</div>
+      <span>Devotional</span>
+    </a>
+    <a href="shop.html?cat=bookmarks" class="category-item">
+      <div class="category-circle">📖</div>
+      <span>Bookmarks</span>
+    </a>
+  </div>
+</div>
 
 <!-- ═══════════════ FEATURES ═══════════════ -->
 <div class="features-strip">
