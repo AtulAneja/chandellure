@@ -241,7 +241,7 @@ ul { list-style: none; }
 .hero-slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,.18) 0%, rgba(0,0,0,.55) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,.35) 0%, rgba(0,0,0,.72) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,7 +431,10 @@ section:nth-child(even) { background: var(--color-surface); }
   object-fit: cover;
   display: block;
   border-radius: var(--radius);
+  filter: brightness(0.85) saturate(1.15);
+  transition: filter var(--transition);
 }
+.product-img:hover { filter: brightness(0.95) saturate(1.1); }
 
 /* ---------- Product Cards ---------- */
 .products-grid {
@@ -976,11 +979,14 @@ section:nth-child(even) { background: var(--color-surface); }
   object-fit: cover;
   display: none;
   border-radius: var(--radius);
+  filter: brightness(0.85) saturate(1.15);
+  transition: filter var(--transition);
 }
 
 .product-media.active {
   display: block;
 }
+.product-media.active:hover { filter: brightness(0.95) saturate(1.1); }
 
 .carousel-dots {
   position: absolute;
